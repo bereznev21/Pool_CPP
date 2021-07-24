@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rpoetess/CLionProjects/day00/ex00/megaphone.cpp
+iostream
+-
+string
+/Users/rpoetess/CLionProjects/day00/ex00/string
+
