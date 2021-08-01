@@ -3,21 +3,28 @@
 //
 #include <iostream>
 #include "string"
-using namespace std;
 
-int main() {
-    while (!cin.eof()) {
-        string input;
-        cin >> input;
+
+char    ft_toupper(char sym_in) {
+    if (sym_in >= 'a' && sym_in <= 'z') {
+        return sym_in - 32;
+    }
+    return sym_in;
+}
+
+int     main(int argc, char** argv) {
+    int n;
+
+    n = 1;
+    if (argc == 1)
+        std::cout<<"* LOUD AND UNBEARABLE FEEDBACK NOISE *\n";
+    while (n < argc) {
         int i = 0;
-        while (input[i]) {
-            input[i] = toupper(input[i]);
+        while (argv[n][i] != '\0') {
+            std::cout<<ft_toupper(argv[n][i]);
             i++;
         }
-        cout<<input;
-        if (!cin.eof())
-            cout<<" ";
-        else
-            cout<<"\n";
+        n++;
     }
+    std::cout<<"\n";
 }
