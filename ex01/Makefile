@@ -1,9 +1,9 @@
 all:
-	clang++ -Wall -Wextra -Werror phone_book.cpp -o phone_book
+	clang++ -Wall -Wextra -Werror Phonebook.cpp -o Phonebook
 
 clean:
-	rm -rf phone_book
+	rm -rf Phonebook
 
 make re:
-	rm -rf phone_book
-	clang++ -Wall -Wextra -Werror phone_book.cpp -o phone_book
+	rm -rf Phonebook
+	clang++ -Wall -Wextra -Werror Phonebook.cpp -o Phonebook
